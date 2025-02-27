@@ -5,12 +5,20 @@
   </head>
   <body>
     <script>
+        /*
         function function1() {
             console.log('hello');
             console.log(2 + 2);
         }
 
         function1(); // this will call the function (runs the code within the function) Output: 'hello' and 4.
+        */
+
+        function calculateTax(cost, taxPercent = 0.1) { // this will automatically add a default value to a parameter, and multiply 5000 by 0.1. Output: 500 cents
+            console.log(cost * taxPercent) // 10.00 into cents.
+        }
+        calculateTax(2000, 0.2); // runs the function // Output: 400 cents
+        calculateTax(5000); // Output: 500 cents
     </script>
   </body>
 </html>
