@@ -35,11 +35,43 @@
         console.log('You cannot drive!'); // If the value being compared to 16 is less than 16, it will run this code. 
       }
         */
+       /*
        console.log(true && false); // Output: false
        console.log(0.2 >= 0 && 0.2 < 1 / 3); // Output: true
 
        console.log(true || false); // Output: true
        console.log(!false); // Output: true
+       */
+
+        /*
+       if(0) { // zero is a 'falsy' value, because it behaves like false.
+        console.log('truthy');
+       }
+
+       const cartQuantity = 5;
+
+       if (cartQuantity) { // if the cartQuanity is above zero, it will display 'cart has products'.
+        console.log('cart has products');
+       }
+
+       console.log(!0); // falsy value, but will be flipped into a truthy value.
+
+       console.log('text' / 5); // Output: NaN; because we are trying to divide a string by a number.
+       
+       let variable1;
+       console.log(variable1); // Output: undefined; because this variable does NOT have a value. *IMPORTANT* we cannot use this with 'const', unless we flat out type: const variable1 = undefined.
+       */
+
+       const result =  true ? 'truthy' : 'falsy'
+       console.log(result); // Output: truthy; if we replace true with a falsy value, itll result in false.
+
+       false && console.log('hello'); // Output: doesn't run the code, because its a false value, so it guards or blocks the code on the right.
+
+       const message = 5 && 'hello'; // if we change it to a truthy value, it will log 'hello'.
+       console.log(message); // Output: false
+
+       const currency = undefined || 'USD'; // if we log a different string or currency, it will pick the left side. If its left undefined, it will choose the second option. We use the OR operator to set a 'default' operator.
+       console.log(currency); // Output: USD.
     </script>
   </body>
 </html>

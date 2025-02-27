@@ -47,3 +47,25 @@
     // || OR OPERATOR; checks if AT LEAST one side is true. console.log(true || false); // Output: true.
 
     // ! NOT OPERATOR; flips the current boolean value to true/false. console.log(!true); // Output: false.
+
+// falsy values:
+    // false
+    // 0
+    // '';
+    // NaN
+    // undefined
+    // null
+
+// * Any value that isn't one of these is a truthy value.
+
+// Ternary Operator: true ? 'truthy' : 'falsy'; like an else-if statement. If the value is true, it will pick the first option. If false, it skips over and picks the second.
+
+// Guard Operator: &&; similar to the AND operator.
+    // Example: false && value2
+    // its impossible for both sides to be truthy, so it stops early, or a 'short circuit evaluation'.
+        // Example: false && console.log('hello'); // Output: doesn't run the code, because its a false value, so it guards or blocks the code on the right.
+
+// Default Operator: ||; similar to OR operator.
+    // true || value2
+        // we already know the result, because the left side is 'truthy'.
+        // this also stops early (short-circuits).
