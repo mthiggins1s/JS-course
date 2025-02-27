@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity}`); // Output: Cart Quantity = 0 We use backticks when wanting to insert a value into a string.
+        ">Show Quantity</button>
+    <button onclick="
+    cartQuantity += 1;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Increases the cartQuantity value by 1.
+    ">Add to cart</button>
+
+    <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Increases the cartQuantity value by 2.
+    ">+2</button>
+
+    <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Increases the cartQuantity value by 3.
+    ">+3</button>
+
+    <button onclick="
+    cartQuantity += 0;
+    console.log('Cart was reset.'); // Output: Cart was reset. and resets the cartQuantity value back to zero.
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: 0
+    ">Reset Cart</button>
+
+    <script>
+        let cartQuantity = 0; // this will start out as zero.
+    </script>
+  </body>
+</html>
