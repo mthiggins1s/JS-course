@@ -23,6 +23,21 @@
     ">+3</button>
 
     <button onclick="
+    cartQuantity += 4;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Increases the cartQuantity value by 4.
+    ">+4</button>
+
+    <button onclick="
+    cartQuantity += 5;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Increases the cartQuantity value by 5.
+    ">+5</button>
+
+    <button onclick="
+    cartQuantity -= 1;
+    console.log(`Cart Quantity: ${cartQuantity}`); // Output: Decreases the cartQuantity value by 1.
+    ">Remove from Cart</button>
+
+    <button onclick="
     cartQuantity += 0;
     console.log('Cart was reset.'); // Output: Cart was reset. and resets the cartQuantity value back to zero.
     console.log(`Cart Quantity: ${cartQuantity}`); // Output: 0
