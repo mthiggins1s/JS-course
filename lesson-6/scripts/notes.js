@@ -22,3 +22,28 @@
 // If-Statements
     // lets us write multiple groups of code
     // and then decide which code to run
+
+
+    // When re-assigning a variable, we have to switch from CONST to LET.
+
+// Steps for Rock Paper Scissors * Algorithm
+    // When we click a button:
+        // 1. Computer randomly selects a move
+        // 2. Compare the moves to get the result
+        // 3. Display the result in a popup.
+
+// ALWAYS CREATE AN ALGORITHM!!!!
+
+
+// Math.random(); generates a random number betwen 0 and 1.
+
+
+// SCOPE: helps us avoid naming conflicts; variables only exist INSIDE the curly brackets, so calling them outside of the brackets will result in an error.
+
+
+//  Logical Operators
+    // && AND OPERATOR; checks if two boolean values are true. console.log(true && true); // Output: true. If one of the boolean values is false, the result would be false.
+
+    // || OR OPERATOR; checks if AT LEAST one side is true. console.log(true || false); // Output: true.
+
+    // ! NOT OPERATOR; flips the current boolean value to true/false. console.log(!true); // Output: false.
