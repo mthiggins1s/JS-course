@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+  <body>
+    <script>
+      true
+      false
+
+      console.log(3 < 5); // Output: true.
+      console.log(3 > 5); // Output: false.
+      console.log(3 > 5 - 5); // Output: true
+
+      console.log(typeof true); // Output: boolean
+
+      console.log(5 == '5.00') // Output: true
+      console.log(5 === '5.00'); // Output: false
+
+      if (true) { // if this boolean is true, we will run the code. If its false, it will NOT run the code.
+        console.log('hello');
+      } else {
+        console.log('else'); // If the value is false, it will skip over the first line of code, and run this one instead.
+      }
+
+      const age = 15; // the age will be 15 (it is saved in a variable).
+
+      if (age >= 16) { // We can just use >= because it will result in a boolean value.
+        console.log('You can drive!');
+        console.log('Congrats');
+      } else if (age >= 14) {
+        console.log('Almost there!'); // If the value is less than 16, but greater than or equal to 14, it will display this message.
+      } else {
+        console.log('You cannot drive!'); // If the value being compared to 16 is less than 16, it will run this code. 
+      }
+    </script>
+  </body>
+</html>
