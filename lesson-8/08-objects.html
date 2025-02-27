@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+        const product = { // this is an object.
+            name: 'socks',
+            price: 1090,
+        };
+        console.log(product); // Output: {name: 'socks', price: 1090}
+        console.log(product.name); // Output: socks; this will access the value associated with the 'name' property.
+        console.log(product.price); // same as before. Output: 1090
+
+        product.name = 'cotton socks';
+        console.log(product.name); // Output: cotton socks
+
+        product.newProperty = true;
+        console.log(product); // this will add newProperty: true to our object.
+        delete(product.newProperty);
+        console.log(product) // this will remove newProperty: true from our object.
+    </script>
+  </body>
+</html>
