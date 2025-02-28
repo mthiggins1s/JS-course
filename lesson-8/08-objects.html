@@ -67,6 +67,27 @@
           message: 'Good job!'
         };
         console.log(object3 === object1);
+
+        const object4 = {
+          message: 'Good job!',
+          price: 799
+        };
+        // const message = object4.message;
+        const { message, price } = object4;
+        console.log(message, price); // Output: Good job! and 799 -> Destructed the object and saved it into the message variable.
+
+        const object5 = {
+        //  message: message // takes whatever is in the message variable and substitutes it with this code.
+        message,  // still displays the object that we had before.
+        // method: function function1() {
+        //  console.log('method')
+        // }    SHORTHAND METHOD SYNTAX
+        method() {
+          console.log('method')
+        }
+        };
+        console.log(object5); // if the property and variable name are the same, we can just type it out ONCE.
+        object5.method(); // this will access the function. Output: method.
     </script>
   </body>
 </html>
