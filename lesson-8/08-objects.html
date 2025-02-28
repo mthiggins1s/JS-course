@@ -5,6 +5,7 @@
   </head>
   <body>
     <script>
+      /*
         const product = { // this is an object.
             name: 'socks',
             price: 1090,
@@ -19,7 +20,35 @@
         product.newProperty = true;
         console.log(product); // this will add newProperty: true to our object.
         delete(product.newProperty);
-        console.log(product) // this will remove newProperty: true from our object.
+        console.log(product); // this will remove newProperty: true from our object.
+        */
+
+        const product2 = {
+          name: 'shirt',
+          'delivery-time': '1 day',
+          rating: { // nested object; object within an object.
+            stars: 4.5,
+            count: 87
+          },
+          fun: function function1() { // created a function within the object.
+            console.log('function inside object');
+          }
+        };
+        console.log(product2); // Output: {name: 'shirt'}
+        console.log(product2.name); // Output: shirt
+        console.log(product2['name']); // [BRACKET NOTATION] // another way to access values inside of objects.
+        // console.log(product2.delivery-time); // Error; JS thinks the dash (-) is a minus sign and that its trying to do math. So we use bracket notation and turn it into a string.
+        console.log(product2['delivery-time']);
+
+        console.log(product2.rating.count); // Output: 87; gets the count out of the 'rating' object.
+        product2.fun(); // calling the function on line 33; Output: 'function inside object'.
+
+        console.log(typeof console.log); // log is seen as a function; this is a method.
+
+        JSON.stringify(product2) // we convert the object into JSON
+        console.log(JSON.stringify(product2)); // converts into a string and is ready to be saved into storage or to be sent to another computer.
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString)); // converts it back into a JavaScript object.
     </script>
   </body>
 </html>
