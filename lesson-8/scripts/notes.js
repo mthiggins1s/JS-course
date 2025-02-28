@@ -112,3 +112,22 @@
     // used to save values more permanently
     // variables are temporary, if we refresh the page or close it, al variables are deleted.
     // LOCALSTORAGE ONLY SUPPORTS STRINGS!!!!
+
+
+// null vs undefined
+    // null = intentionally want something to be empty
+
+
+// auto-boxing (starts like 55)
+    // JS automatically wraps the string in a special obejct with the methods of .length and .toUpperCase.
+
+// Examples of what works with AUTO-BOXING
+
+    // 3.0.toString() ✅
+    // true.toString() ✅
+
+    // null.property ❌
+    // undefined.method() ❌
+
+
+// Objects are REFERENCES

@@ -25,16 +25,21 @@
     ">Reset Score</button>
 
     <script>
-        let score = JSON.parse(localStorage.getItem('score')); // gets the item out of localStorage()
+        let score = JSON.parse(localStorage.getItem('score')) || { // gets the item out of localStorage()
+            wins: 0,
+            losses: 0,
+            ties: 0
+        }
         // we get the score out of localStorage(). [line 27 and 69] // we use JSON.parse() to convert back into an object.
-
-        if (score === null) { // check if the score is null.
+        /*
+        if (!score) { // check if the score is null. !score will FLIP it to TRUE
             score = {
-                wins: 0,
-                losses: 0,
-                ties: 0
+              wins: 0,
+              losses: 0,
+              ties: 0
             };
         }
+        */
 
        function playGame(playerMove) {
             const computerMove = pickComputerMove(); // even though we use computerMove here and below, we have one inside and outside the scope, so they will NOT conflict with eachother!

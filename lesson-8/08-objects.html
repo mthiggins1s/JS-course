@@ -23,6 +23,7 @@
         console.log(product); // this will remove newProperty: true from our object.
         */
 
+        /*
         const product2 = {
           name: 'shirt',
           'delivery-time': '1 day',
@@ -49,6 +50,23 @@
         console.log(JSON.stringify(product2)); // converts into a string and is ready to be saved into storage or to be sent to another computer.
         const jsonString = JSON.stringify(product2);
         console.log(JSON.parse(jsonString)); // converts it back into a JavaScript object.
+        */
+
+        console.log('hello'.length); // length property tells us how many characters are in the string. Output: 5
+        console.log('hello'.toUpperCase()); // give us a copy of the string in upperCase. Output: HELLO
+
+        const object1 = { // this creates a reference that POINTS to the message: hello in the computers memory.
+          message: 'hello'
+        };
+        const object2 = object1; // makes a copy of the reference, not the code.
+
+        object1.message = 'Good job!';
+        console.log(object1); // Output: {message: 'Good job!'} -> we were able to change the message property, even though we used const. Const prevents us from changing the reference in the VARIABLE, but DOES NOT prevent us from changing the object that its pointing to.
+
+        const object3 = {
+          message: 'Good job!'
+        };
+        console.log(object3 === object1);
     </script>
   </body>
 </html>
